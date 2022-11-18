@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,13 @@
     <title>Portfólio - Meu livro do caminhar!</title>
 </head>
 <body>
-    <header id="header">
-        <div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">P-Fólio</a></li>
+    <header id="header" class="header">
+        <div class="container_menu">
+            <h1><a href="index.html">P-Fólio</a></h1>
+
+            <nav id="inicio">
+                <ul class="navegation_menu">
+                    <li><a href="#header">Início</a></li>
                     <li><a href="#sobre_mim">Sobre mim</a></li>
                     <li><a href="#formacao">Formação</a></li>
                     <li><a href="#experiencia">Experiência</a> </li>
@@ -67,18 +69,25 @@
         </div>
         <div class="detalhes-formacao">
             <h3>2022</h3>
-            <h3>DESENVOLVEDOR FROND-END</h3>
-            <p>Curso técnico de desenvolvedor frond-end, envolvendo <em>Cascading Style Sheets (CSS), Linguagem de Marcação de HiperTexto (HTML) e JavaSccript.</p>
+            <h3>Desenvolvedor Frond-end</h3>
+            <p>Curso de desenvolvedor frond-end, com seguintes conhecimetos:</p> 
+            <div class="formacao-list">
+                <ul>
+                    <li><em>Cascading Style Sheets (CSS)</em></li>
+                    <li><em>Linguagem de Marcação de HiperTexto (HTML)</em></li>
+                    <li><em>JavaSccript</em></li>
+                </ul>
+            </div>
         </div>
         <div class="detalhes-formacao">
             <h3>2022</h3>
-            <h3>LICENCIANDO EM FÍSICA</h3>
-            <p>Licenciando em física, com participação em Programa Institucuinal de Bolsa de Iniciação à Docência (PIBID-2021).</p>
+            <h3>Licenciatura em física</h3>
+            <li>Termnado a liceciatura em física...</li>
         </div>
         <div class="detalhes-formacao">
             <h3>2022</h3>
-            <h3>TÉCNICO EM MANUTENÇÃO</h3>
-            <p>Técnico em manutencção e reparação dos computadores.</p>
+            <h3>Técnico em manutenção</h3>
+            <li>Técnico em manutencção e reparação de computadores.</li>
         </div>
     </section>
 
@@ -89,45 +98,45 @@
         </div>
         <div class="experiencia-1">
             <ul>
-                <li><strong>2020:</strong> Atuou na escola como bolsista no Programa Institucional de Bolsa de Iniciação à Docência (PIBID), durante 2 anos.</li>
-                <li><strong>2016:</strong> Foi professor de informática básica.</li>
-                <li><strong>2015 - 2016:</strong> Gerente de restaurante Bar Bombolom 2.</li>
-                <li><strong>2014:</strong> Foi presidente de mesa de recenciamento eleitoral (1 mês).</li>
+                <li><strong>2020: </strong> Atuou na escola como bolsista no Programa Institucional de Bolsa de Iniciação à Docência (PIBID), durante 2 anos.</li>
+                <li><strong>2016: </strong>Foi professor de informática básica.</li>
+                <li><strong>2015 - 2016: </strong> Gerente de restaurante Bar Bombolom 2.</li>
+                <li><strong>2014: </strong> Foi presidente de mesa de recenciamento eleitoral (1 mês).</li>
             </ul>  
         </div>
         <div class="experiencia-2">
             <ul>
-                <li><strong>2014:</strong> Foi estagiário no Ministério da agricultura e desenvolvimento rural, como técnico em manutenção de computadores, (4 meses).</li>
-                <li><strong>2011 - 2014:</strong> Gerente de cybercafé.</li>
-                <li><strong>2009 - 2011:</strong> Foi funcionário no cybercafé/atendente/auxiliar.</li>
+                <li><strong>2014: </strong> Foi estagiário no Ministério da agricultura e desenvolvimento rural, como técnico em manutenção de computadores, (4 meses).</li>
+                <li><strong>2011 - 2014: </strong> Gerente de cybercafé.</li>
+                <li><strong>2009 - 2011: </strong> Foi funcionário no cybercafé/atendente/auxiliar.</li>
             </ul>
         </div>
 </section>  
 
-    <!--==início de projeto==-->
+    <!--==início de projeto==--> 
     <section class="linha-6">
         <div class="titulo-prjeto"><h2>Projeto</h2></div>
         <div class="card">
             <div class="image"><img src="./imagem/bxl-github.svg" alt="" ></div>
             <h4>Olá!</h4>
-            <p>Meu primeiro projeto no github.<br> Fique a vontade em contribuir!</p>
-            <a href="https://github.com/mulbasilva" target="_blank">Repositório</a>
+            <p>Primeiro projeto no github.<br> Fique a vontade em contribuir!</p>
+            <button class="botao"><a href="https://github.com/mulbasilva"></a>Repositório</button>
         </div>
         <div class="card">
             <div class="image"><img src="./imagem/html notebook.jpg" alt=""></div>
             <h4>Não disponível ainda<br>Até em breve.</h4>
             <p>LOADING...</p>
-           <a href="">Repositório</a>
+            <button class="botao"><a href="#"></a>Repositório</button>
         </div>
         <div class="card">
             <div class="image"><img src="./imagem/teach.jpg" alt=""></div>
             <h4>Não disponível ainda<br>Até em breve.</h4>
             <p>LOADING...</p>
-            <a href="">Repositório</a>
+            <button class="botao"><a href="#"></a>Repositório</button>
         </div>
     </section>
 
-    <!--==início porjeto==-->  <!--os cards do projeto passam por cima do menu. Estranho!-->
+    <!--==início contato==-->  
     <section id="contato" class="linha-7">
         <div class="titulo-contanto redes-sociais">
             <div><h2>Contato</h2></div>
@@ -135,13 +144,14 @@
               
                 <!--meus rredes sociais-->
                     <!--github-->
-                    <a href="https://github.com/mulbasilva" target="_blank"></a>
+                    
+                    <a href="https://github.com/mulbasilva" target="_blank"><img src="./imagem/bxl-github.svg" alt=""></a>
                     <!--instagram-->
-                    <a href="https://www.instagram.com/" target="_blank"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./imagem/bxl-instagram-alt.svg" alt=""></a>
 
                     <!--facebook-->
-                    <a href="https://www.facebook.com/" target="_blank"></a>
-
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./imagem/bxl-facebook-circle.svg" alt=""></a>
+                    
                     <!--linkedIn-->
                     
         </div>

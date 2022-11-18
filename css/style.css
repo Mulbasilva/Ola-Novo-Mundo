@@ -4,43 +4,59 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif, sans-serif;
  }
+ /* reset */
+
 
  @media screen and (max-width: 578px){
-     .menu, .linha-1, .linha-2, .linha-3, .linha-4, .linha-5, .linha-7, .linha-8{
+     .linha-1, .linha-2, .linha-3, .linha-4, .linha-5, .linha-7, .linha-8{
          flex-direction: column;
      }
  }
-.menu{
+
+ @media screen and (max-width: 900px){
+    .container_menu, .navegation_menu{
+        flex-direction: column;
+    }
+    .container_menu h1 a{
+       display: none;
+  }
+  
+
+}
+/* fim responsividade */
+
+ .container_menu h1 a{
+    font-size: 20px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    color: black;
+ }
+.container_menu{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     background-color: rgb(246, 107, 7);
-    padding: 20px;
+    padding: 10px;
     position: fixed;
     width: 100%;
     top: 0;
     scroll-behavior: smooth;
 }
-.menu li{
-    text-align: center;
+.navegation_menu, li{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3rem;
     list-style: none;
-    letter-spacing: 1px;
+}
+.navegation_menu, li a{
+    color: black;
+    font-size: 18px;
+    letter-spacing: 2px;
     cursor: pointer;
 }
-.menu li a{
-   margin: 7px;
-   color: black;
-   font-size: 20px;
+.navegation_menu, li a:hover {
+   color: white;
 }
-.menu li a:hover{
-    background-color: #444;
-    padding: 10px;
-    border-radius: 20px;
-    color: white;
-    
-    
- }
  
 /*==fim menu==*/
 
@@ -53,19 +69,21 @@
 .foto-frontal{
     flex:100%;
 }
-@media screen and (max-width: 480px){
-    .foto-frontal img{
-        width: auto;
-        height:auto;
-    }
-    
-}
   
 .foto-frontal img{
     width: 100%;
     height: 400px;
 }
 /*fim foto frontal*/
+
+
+.linha-2{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* fim ola */
+
+
 
 .linha-3{
     display: flex;
@@ -75,6 +93,7 @@
     align-items: center;
     margin-top: 30px;
     margin-bottom: 120px;
+    overflow: auto;
     
 }
 .titulo-sobre{
@@ -89,14 +108,16 @@
     line-height: 40px;
     padding-left: 35px;
     font-size: 18px;
-    /*border: 1px solid black;*/
 }
+
+
 /*===fim sobre mim==*/
 
 .linha-4{
     display: flex;
     flex-wrap: wrap;
     background-color: #434343;
+    overflow: auto;
 }
 .titulo-formacao{
     color: #707070;
@@ -112,6 +133,9 @@
 .detalhes-formacao p{
     font-size: 18px;
 }
+.formacao-list, ul li, .detalhes-formacao, li{
+    margin-top: 10px;
+}
 
 /*===fim formação=*/
 
@@ -120,6 +144,7 @@
     flex-wrap: wrap;
     background-color: #DEDEDE;
     align-items: center;
+    overflow: auto;
 }
 .titulo-experiencia{
     color: #707070;
@@ -142,7 +167,8 @@
 .linha-6{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 60px;    
+    margin-bottom: 60px; 
+
 }
 .titulo-prjeto{
     flex: 100%;
@@ -150,12 +176,9 @@
     color: #707070;
     font-size: 20px;
 }
-.card h4, .card p{
-    padding: 10px;
-}
+
 .card{
     flex: 30%;
-    position: relative;
     text-align: center;
     border: 1px solid black;
     border-radius: 15px;
@@ -164,26 +187,32 @@
     width: 200px;
     height:430px;
     background-color: #707070;
+    overflow: auto;
 }
 .image img{
     border-radius: 15px;
     height: 250px;
     width: 100%;
 }
-.card a{
-    background-color: black;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 50px;
-    cursor: pointer;
-    position: absolute;
-    left: calc(50% - 90px);
-
+.botao{
+   padding: 1rem;
+   font-size: 1rem;
+   border: none;
+   outline: none;
+   background-color: rgb(246, 107, 7);
+   border-radius: 5%;
+   cursor: pointer;
+   transition: .3s;
+   color: #fff;
+   margin: 10px;
 }
 .card a:hover{
-    background-color: #70707052;
-    color: black;
+    background-color: #010101d1;
+    color: #fff;
     animation: both;
+}
+.botao:hover{
+    background-color: #444;
 }
 
 @media screen and (max-width: 430px){
