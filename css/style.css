@@ -124,7 +124,7 @@
     opacity: 1;
     font-size: 20px;
     flex: 100%;
-    padding: 30px 0 0 60px;;
+    padding: 30px 0 0 60px;
 }
 .detalhes-formacao{
     flex: 100%;
@@ -196,20 +196,17 @@
 }
 .botao{
    padding: 1rem;
-   font-size: 1rem;
    border: none;
    outline: none;
    background-color: rgb(246, 107, 7);
    border-radius: 5%;
    cursor: pointer;
    transition: .3s;
-   color: #fff;
    margin: 10px;
 }
-.card a:hover{
-    background-color: #010101d1;
+.botao a{
     color: #fff;
-    animation: both;
+    font-size: 1rem;
 }
 .botao:hover{
     background-color: #444;
@@ -225,61 +222,99 @@
 .linha-7{
     display: flex;
     flex-wrap: wrap;
-    background-color:#000000;
+    background-color:#070707;
+    padding: 20px 20px 20px 60px;
+    overflow: auto;
+    align-items: center;
+
 }
 .titulo-contanto{
-    flex: 50%;
+    flex: 70%;
     color: white;
-    line-height: 40px;
+    line-height: 30px;
     text-align: center;
+    font-style: italic;
 }
 .formulario{
-    flex: 50%;
     text-align: center;
 }
-.redes-sociais svg:hover{
-    background-color: rgba(232, 100, 6, 0.364);
-    border-radius: 40px;
-    padding: 3px;
-    cursor: pointer;
+.r-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
-form {
-    margin: 2px auto;
-    width: 400px;
-    padding: 1em;
-    border-radius: 1em;
+.social a img{
+    padding: 5px;
+    color: rgb(231, 223, 223);
+    background-color:#fff;
+    margin: 5px;
+    border-radius: 50%;
 }
-form div + div {
-    margin-top: 1em;
+.social a img:hover{
+    background-color: rgb(246, 107, 7);
+    transition: .3s;
 }
-label {
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-}
-input, textarea {
-    font: 1em sans-serif;
-    width: 300px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 5px solid #000;
-}
-input:focus, textarea:focus {
-    border-color: #000;
-}
-textarea {
-    vertical-align: top;
-    height: 5em;
-    resize: vertical;
-    
-}
-.botao button{
-    text-align: center;
-    background-color: #444;
-    color: white;
-    padding: 10px 30px;
+
+.container{
+    padding: 1rem;
     border-radius: 10px;
-}
+    min-width: 30%;
+    background-color: #444;
+    overflow: auto;
+    color: white;
+  }
+  .fot-tit{
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .container form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .orientacao{
+    display: none;
+  }
+  .inputs{
+    padding: 8px 5px;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(58, 56, 56);
+    border: solid 2px black;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    transition: .3s;
+  }
+  .inputs:focus{
+    border-color:rgb(49, 7, 147);
+  }
+  .caixa_sexo, .caixa_portfolio{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  button[type="submit"]{
+    padding: 14px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(246, 107, 7);
+    cursor: pointer;
+    transition: .3s;
+  }
+  button[type="submit"]:hover{
+    background-color: rgb(19, 186, 100);
+  }
+  
+  @media screen and (max-width: 556px){ 
+    .caixa_sexo, .caixa_portfolio{
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+  }
 
 /*===fim contato==*/
 

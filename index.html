@@ -65,7 +65,7 @@
     <!--==início de formação==-->
     <section id="formacao" class="linha-4">
         <div class="titulo-formacao">
-            <H2>Formação</H2>
+            <h2>Formação</h2>
         </div>
         <div class="detalhes-formacao">
             <h3>2022</h3>
@@ -94,7 +94,7 @@
     <!--==início de experiencia==-->
     <section id="experiencia" class="linha-5">
         <div class="titulo-experiencia">
-            <H2>Experiências</H2>
+            <h2>Experiências</h2>
         </div>
         <div class="experiencia-1">
             <ul>
@@ -113,67 +113,107 @@
         </div>
 </section>  
 
-    <!--==início de projeto==--> 
+    <!--==início do projeto==--> 
     <section class="linha-6">
         <div class="titulo-prjeto"><h2>Projeto</h2></div>
         <div class="card">
             <div class="image"><img src="./imagem/bxl-github.svg" alt="" ></div>
             <h4>Olá!</h4>
             <p>Primeiro projeto no github.<br> Fique a vontade em contribuir!</p>
-            <button class="botao"><a href="https://github.com/mulbasilva"></a>Repositório</button>
+            <button class="botao"><a href="https://github.com/mulbasilva" target="_blank">Repositório</a></button>
         </div>
         <div class="card">
             <div class="image"><img src="./imagem/html notebook.jpg" alt=""></div>
             <h4>Não disponível ainda<br>Até em breve.</h4>
             <p>LOADING...</p>
-            <button class="botao"><a href="#"></a>Repositório</button>
+            <button class="botao"><a href="#" target="_blank">Repositório</a></button>
         </div>
         <div class="card">
             <div class="image"><img src="./imagem/teach.jpg" alt=""></div>
             <h4>Não disponível ainda<br>Até em breve.</h4>
             <p>LOADING...</p>
-            <button class="botao"><a href="#"></a>Repositório</button>
+            <button class="botao"><a href="#" target="_blank">Repositório</a></button>
         </div>
     </section>
 
     <!--==início contato==-->  
     <section id="contato" class="linha-7">
-        <div class="titulo-contanto redes-sociais">
-            <div><h2>Contato</h2></div>
-                <p>Quer entrar em contato comigo?<br>Preencha o formulário ao lado e entrarei<br> em contato o mais rápido possível. <br> Você também pode me encontrar nas seguintes redes sociais:</p>
-              
-                <!--meus rredes sociais-->
-                    <!--github-->
-                    
-                    <a href="https://github.com/mulbasilva" target="_blank"><img src="./imagem/bxl-github.svg" alt=""></a>
-                    <!--instagram-->
-                    <a href="https://www.instagram.com/" target="_blank"><img src="./imagem/bxl-instagram-alt.svg" alt=""></a>
+        <div class="titulo-contanto">
+            <h2>Contato</h2>
+            <p>Quer entrar em contato comigo?<br>Preencha o formulário ao lado e entrarei em contato o mais rápido possível. <br> Você também pode me encontrar nas seguintes redes sociais:</p>
 
-                    <!--facebook-->
+                <!--redes sociais-->
+                    <!--github-->
+            <div class="r-sociais">
+                <div class="social">
+                    <a href="https://github.com/mulbasilva" target="_blank"><img src="./imagem/bxl-github.svg" alt=""></a>
+                </div>
+
+                <!--instagram-->
+                <div class="social">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./imagem/bxl-instagram-alt.svg" alt=""></a>
+                </div>
+                
+                <!--facebook-->
+                <div class="social">
                     <a href="https://www.facebook.com/" target="_blank"><img src="./imagem/bxl-facebook-circle.svg" alt=""></a>
-                    
-                    <!--linkedIn-->
-                    
+                </div>
+
+                <!--linkedIn-->
+                <div class="social">
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="./imagem/bxl-linkedin-square.svg" alt=""></a>
+                </div>
+                
+            </div> 
         </div>
-        <div class="formulario"> <!--area de formulário-->
-            <form action="/pagina-processa-dados-do-form" method="post">
-                <div>
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" placeholder="Digite seu nome aqui"/>
+                   
+                    
+                    
+                <div class="container"><!--area de formulário-->
+                  <h2 class="fot-tit">Formulário</h2>
+                  <form>
+                    <div>
+                      <input type="text" name="name" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()"> 
+                      <span class="orientacao">O nome deve conter no mínimo 2 letras</span>    
+                    </div>
+                    <p>Sexo:</p>
+                    <div class="caixa_sexo">
+                      <div>
+                        <input type="radio" name="sexo" value="m" checked="checked" id="masculino">
+                        <label for="masculino">Masculino</label>
+                      </div>
+                      <div>
+                        <input type="radio" name="sexo" value="f" id="feminino">
+                        <label for="feminino">Feminino</label>
+                      </div>
+                    </div>
+                    <div>
+                      <input type="email" name="e-mail" placeholder="Digite seu e-mail" class="inputs required">
+                      <span class="orientacao">Digite e-mail válido</span>    
+                    </div>
+                    <div>
+                      <!-- <label for="password">Pasword</label> -->
+                      <input type="password" id="password" placeholder="Digite a senha" class="inputs required">
+                      <span class="orientacao">Senha deve conter no mínio caracteres</span>    
+                    </div>
+                    <div>
+                      <input type="password" name="password" placeholder="Repita a senha" class="inputs required">
+                      <span class="orientacao">As senhas devem ser compatíveis</span>    
+                    </div>
+                    <textarea name="msg" cols="30" rows="10" placeholder="Escreva a sua mensagem aqui..." class="inputs required"></textarea>
+              
+                    <p>Gostou do portfólio?</p>
+                    <div class="caixa_portfolio">
+                      <div>
+                        <input type="radio" name="opção" value="sim" checked="checked"> Sim
+                      </div>
+                      <div>
+                        <input type="radio" name="opção" value="não"> Não
+                      </div>
+                    </div>
+                    <button class="botao" type="submit">Enviar</button>
+                  </form>
                 </div>
-                <div>
-                    <label for="mail">E-mail:</label>
-                    <input type="email" id="mail" placeholder="Digite seu e-mail aqui"/>
-                </div>
-                <div>
-                    <label for="msg">Mensagem:</label>
-                    <textarea id="msg" placeholder="Digite sua mensagem aqui"></textarea>
-                </div>
-                <div class="botao">
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
-        </div>
     </section>
 
     <!--==início rodapé==-->
@@ -195,4 +235,5 @@
     </footer>
 
 </body>
+<script src="javascript.js"></script>
 </html>
