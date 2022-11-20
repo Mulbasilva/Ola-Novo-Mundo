@@ -168,7 +168,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 60px; 
-
 }
 .titulo-prjeto{
     flex: 100%;
@@ -274,6 +273,9 @@
     gap: 1rem;
   }
   .orientacao{
+    font-size: 12px;
+    margin: 3px 0 0 1px;
+    color: red;
     display: none;
   }
   .inputs{
@@ -308,8 +310,8 @@
     background-color: rgb(19, 186, 100);
   }
   
-  @media screen and (max-width: 556px){ 
-    .caixa_sexo, .caixa_portfolio{
+  @media screen and (max-width: 989px){ 
+    .linha-7, .caixa_sexo, .caixa_portfolio{
       flex-direction: column;
       gap: 12px;
     }

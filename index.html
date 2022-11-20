@@ -171,7 +171,7 @@
                     
                 <div class="container"><!--area de formulário-->
                   <h2 class="fot-tit">Formulário</h2>
-                  <form>
+                  <form id="form">
                     <div>
                       <input type="text" name="name" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()"> 
                       <span class="orientacao">O nome deve conter no mínimo 2 letras</span>    
@@ -188,27 +188,19 @@
                       </div>
                     </div>
                     <div>
-                      <input type="email" name="e-mail" placeholder="Digite seu e-mail" class="inputs required">
+                        <!-- <label for="email">E-mail</label> ===poderia colocar, mas prefiro ão por agora==-->
+                      <input type="email" name="e-mail" placeholder="Digite seu e-mail" class="inputs required" oninput="emailValidate()">
                       <span class="orientacao">Digite e-mail válido</span>    
                     </div>
-                    <div>
-                      <!-- <label for="password">Pasword</label> -->
-                      <input type="password" id="password" placeholder="Digite a senha" class="inputs required">
-                      <span class="orientacao">Senha deve conter no mínio caracteres</span>    
-                    </div>
-                    <div>
-                      <input type="password" name="password" placeholder="Repita a senha" class="inputs required">
-                      <span class="orientacao">As senhas devem ser compatíveis</span>    
-                    </div>
-                    <textarea name="msg" cols="30" rows="10" placeholder="Escreva a sua mensagem aqui..." class="inputs required"></textarea>
+                    <textarea name="msg" cols="30" rows="10" placeholder="Escreva a sua mensagem aqui..." class="inputs required" oninput="texareaValidate()"></textarea>
               
                     <p>Gostou do portfólio?</p>
                     <div class="caixa_portfolio">
                       <div>
-                        <input type="radio" name="opção" value="sim" checked="checked"> Sim
+                        <input type="radio" name="opção" value="sim" checked="checked" id="sim"> Sim
                       </div>
                       <div>
-                        <input type="radio" name="opção" value="não"> Não
+                        <input type="radio" name="opção" value="não" id="nao"> Não
                       </div>
                     </div>
                     <button class="botao" type="submit">Enviar</button>
@@ -235,5 +227,5 @@
     </footer>
 
 </body>
-<script src="javascript.js"></script>
+<script src="./js/javaScript.js"></script>
 </html>
