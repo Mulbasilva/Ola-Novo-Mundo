@@ -77,9 +77,9 @@ function showGithubUserProfile(){
         document.getElementById('user-info').innerHTML = `
             <li>Nome: ${data.name} (${data.login})</li>
             <li>Repositório: ${data.public_repos}</li>
-            <li>Visite: ${data.html_url}</li>
             <li>Seguidores: ${data.followers}</li>
             <li>Seguindo: ${data.following}</li>
+            <a class="btn btn-primary" href="${data.html_url}" role="button" target="_blank">Github</a>
         `
         }
         console.log(data)

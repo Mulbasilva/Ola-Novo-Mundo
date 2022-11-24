@@ -118,7 +118,7 @@
       justify-content: center;
     }
   }
-  
+ 
   .titulo_api{  
     padding: 0 0 0.7rem 2rem;
     color: rgba(174, 173, 173, 0.701);
@@ -134,8 +134,17 @@
   }
 
   .form-control{
-   margin-left: 1rem;
-
+   margin: 0 1.5rem;
+    max-width: 60%;
+  }
+  .juntos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #botao{
+    font-size: 1rem;
+    margin-bottom: 1rem; 
   }
 
 /*==fim github profile==*/
