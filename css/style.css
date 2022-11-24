@@ -92,7 +92,7 @@
     align-items: center;
    }
 
-#foto{
+#foto_api, .image{
     width: 13.4rem;
     height: 13.4rem;
     padding: 0.4rem;
@@ -105,10 +105,11 @@
     padding: 1.3rem;
     border-radius: 1%;
     display: flex;
-    width: 43rem;
+    width: 45rem;
     height: auto;
     box-shadow: rgb(156, 152, 152) 0 5px 5px 0;
     word-break: break-all; /*para ajustar o URL com a págigia*/
+    box-sizing: border-box;
    }
 
   @media screen and (max-width: 480px){
@@ -124,27 +125,43 @@
     color: rgba(174, 173, 173, 0.701);
    }
    
-  .campos{
+  .campos_api{
    color: #fff;
    text-align: center;
   }
-  #user-info{
+  #user-info_api{
     list-style: none;
     line-height: 1.2rem;
   }
 
-  .form-control{
-   margin: 0 1.5rem;
+  .form-control_api{
+    margin-left: 1.5rem;
     max-width: 60%;
+    padding: 0.2rem 0.2rem;
+    outline: none;
+    border: solid 2px black;
+    box-sizing: border-box;
+    transition: .3s;
   }
-  .juntos{
+  .form-control_api:focus{
+    border:rgb(239, 107, 7) 2px solid;
+   }
+
+  .juntos_api{
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  #botao{
+  #botao_api{
     font-size: 1rem;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
+    border: none;
+    padding: 0.2rem 0.2rem;
+    margin: 0 1.5rem;
+  }
+  #botao_api:hover{
+    background-color: rgb(239, 107, 7);
+    border: none;
   }
 
 /*==fim github profile==*/
