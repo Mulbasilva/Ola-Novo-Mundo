@@ -84,6 +84,62 @@
 /* fim ola */
 
 
+/* ===start github profile */
+.api{
+    display: flex;
+    margin: 4rem 2rem 4rem auto;
+    justify-content: flex-end;
+    align-items: center;
+   }
+
+#foto{
+    width: 13.4rem;
+    height: 13.4rem;
+    padding: 0.4rem;
+    border: 5px solid #fff;
+    border-radius: 3%;
+   }
+  
+   .container_api{
+    background-color: #444;
+    padding: 1.3rem;
+    border-radius: 1%;
+    display: flex;
+    width: 43rem;
+    height: auto;
+    box-shadow: rgb(156, 152, 152) 0 5px 5px 0;
+    word-break: break-all; /*para ajustar o URL com a págigia*/
+   }
+
+  @media screen and (max-width: 480px){
+    .api, .container_api{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  .titulo_api{  
+    padding: 0 0 0.7rem 2rem;
+    color: rgba(174, 173, 173, 0.701);
+   }
+   
+  .campos{
+   color: #fff;
+   text-align: center;
+  }
+  #user-info{
+    list-style: none;
+    line-height: 1.2rem;
+  }
+
+  .form-control{
+   margin-left: 1rem;
+
+  }
+
+/*==fim github profile==*/
+
 
 .linha-3{
     display: flex;
@@ -163,60 +219,6 @@
     font-size: 18px;
 }
 /*==fim experiencia==*/
-
-.linha-6{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 60px; 
-}
-.titulo-prjeto{
-    flex: 100%;
-    padding: 60px 10px 30px 60px;
-    color: #707070;
-    font-size: 20px;
-}
-
-.card{
-    flex: 30%;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 15px;
-    font-size: 20px;
-    margin: 10px;
-    width: 200px;
-    height:430px;
-    background-color: #707070;
-    overflow: auto;
-}
-.image img{
-    border-radius: 15px;
-    height: 250px;
-    width: 100%;
-}
-.botao{
-   padding: 1rem;
-   border: none;
-   outline: none;
-   background-color: rgb(246, 107, 7);
-   border-radius: 5%;
-   cursor: pointer;
-   transition: .3s;
-   margin: 10px;
-}
-.botao a{
-    color: #fff;
-    font-size: 1rem;
-}
-.botao:hover{
-    background-color: #444;
-}
-
-@media screen and (max-width: 430px){
-    .linha-6 {
-    flex-direction: column;
-    }
-}
-/*==fim projeto==*/
 
 .linha-7{
     display: flex;

@@ -51,3 +51,39 @@ function texareaValidate(){
         removeError(2); 
     }
 }
+
+// fim da validaçao do formulario
+
+
+//start github profile ==========
+
+document.getElementById('botao').addEventListener('click', showGithubUserProfile)
+
+function showGithubUserProfile(){
+
+    let username = document.getElementById('gusername').value
+
+    let url = 'https://api.github.com/users/'+username
+    fetch(url).then(res=>res.json()).then(data=>{
+        if(data.message){
+            document.getElementById('user-info').innerHTML = `
+                <h3>Perfil não encontrado</h3>    
+            `
+        }else{
+            document.getElementById('foto').innerHTML = `
+            <img src="${data.avatar_url}"
+            style="width:12rem">
+        `
+        document.getElementById('user-info').innerHTML = `
+            <li>Nome: ${data.name} (${data.login})</li>
+            <li>Repositório: ${data.public_repos}</li>
+            <li>Visite: ${data.html_url}</li>
+            <li>Seguidores: ${data.followers}</li>
+            <li>Seguindo: ${data.following}</li>
+        `
+        }
+        console.log(data)
+    }).catch(e=>{
+        console.log(e)
+    })
+}
