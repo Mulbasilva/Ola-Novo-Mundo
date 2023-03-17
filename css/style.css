@@ -1,31 +1,30 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*==========Variables==================*/
+/*=========== Variables ==================*/
 :root{
-  /* background color page */
   --color-bgd-alternative: #2c2b26;
-
-  /* font size variable */
-  --first-title: 2rem;
-  --second-title: 1.5rem;
-  --paragraph: 1rem;
-
-  --margin-lf: 3rem;
-  --margin-rt: 3rem;
-
-  /* ==========menu color======= */
   --letter-color: #fff;
-  --link-color: #1e8c93;
-  --color-h: #00b5b9; 
+  --link-color: #ce5a61;
+  --color-down: #00b5b9;
+  --clr-menu: #077577;
+  --clr-footr: #BB000E; 
+
+  /* --wdt-temp: 62.5rem; */
+  --first-0-1: 0.625rem;
+  --second-0-2: 1.25rem; 
 }
 
 *{
   box-sizing: border-box;
-    margin: 0; 
+    margin: 0;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
  }
- /* reset */
+ /*============= reset =====================*/
+
+
+
 
 
  @media screen and (max-width: 578px){
@@ -45,17 +44,20 @@
 }
 
 
-/* ========start menu style====== */
- 
- .nav__list{
+/* ================== header =========================== */
+.nav__content{
+  margin: var(--second-0-2);
+} 
+
+.nav__list{
   display: flex;
   list-style: none;
   justify-content: end;
-  margin-right: var(--margin-rt);
+  flex-wrap: wrap;
  }
 
 .nav__item{
-  margin-left: var(--margin-rt);
+  margin-left: 3rem;
   font-size: 1.2rem;
   margin-top: 2rem;
  }
@@ -65,17 +67,23 @@
 }
 
 .nav__name:hover{
-  color: var(--color-h);
+  color: var(--clr-menu);
 }
 
 
-/* =================description area======== */
-.linha-2{
-    display: flex;
-    flex-wrap: wrap;
+/* ==================== introducer ================= */
+.introducer__area{
+  margin: var(--second-0-2);
 }
-/* fim ola */
 
+.introducer__container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.introducer__description{
+  font-size: 3rem;
+}
 
 /* ===start github profile */
 .api{
