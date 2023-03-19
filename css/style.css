@@ -1,29 +1,45 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*=========== Variables ==================*/
+/*=========== colors Variables ==================*/
 :root{
-  --color-bgd-alternative: #2c2b26;
-  --letter-color: #fff;
-  --link-color: #ce5a61;
-  --color-down: #00b5b9;
+  --bgd-color: #d6d6d6;
+  --first-color: #000;
+  --second-color: #000;
+  --hover-clr: #00b5b9;
   --clr-menu: #077577;
-  --clr-footr: #BB000E; 
+  --foot-clr: #BB000E; 
 
-  /* --wdt-temp: 62.5rem; */
-  --first-0-1: 0.625rem;
-  --second-0-2: 1.25rem; 
+  /* ================ margens variable =========== */
+  --first-1-0: 0.625rem;
+  --second-2-0: 1.25rem; 
+
+  /* ================ font-size's =========== */
+  --big-fs-3-2: 2rem;
+  --fs-2-4: 1.5rem;
+  --fs-2-0: 1.25rem;
+  --fs-1-8: 1.125rem;
+  --normal-fs-1-6: 1rem;
+  --fs-small-first-1-0: .625rem;
+  --fs-small-second-0-5: .3125rem;
 }
 
+/*============= reset =====================*/
 *{
   box-sizing: border-box;
     margin: 0;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
  }
- /*============= reset =====================*/
+ 
+body{
+  background-color: var(--bgd-color);
+}
 
-
+.section__tittle,
+.section__subtitle{
+  
+}
 
 
 
@@ -46,7 +62,7 @@
 
 /* ================== header =========================== */
 .nav__content{
-  margin: var(--second-0-2);
+  margin: 1.25rem;
 } 
 
 .nav__list{
@@ -70,10 +86,9 @@
   color: var(--clr-menu);
 }
 
-
 /* ==================== introducer ================= */
 .introducer__area{
-  margin: var(--second-0-2);
+  margin: 1.25rem;
 }
 
 .introducer__container{
@@ -85,89 +100,7 @@
   font-size: 3rem;
 }
 
-/* ===start github profile */
-.api{
-    display: flex;
-    margin: 4rem 2rem 4rem auto;
-    justify-content: flex-end;
-    align-items: center;
-   }
-
-#foto_api, .image{
-    width: 13.4rem;
-    height: 13.4rem;
-    padding: 0.4rem;
-    border: 5px solid #fff;
-    border-radius: 3%;
-   }
-  
-   .container_api{
-    background-color: #444;
-    padding: 1.3rem;
-    border-radius: 1%;
-    display: flex;
-    width: 45rem;
-    height: auto;
-    box-shadow: rgb(156, 152, 152) 0 5px 5px 0;
-    word-break: break-all; /*para ajustar o URL com a págigia*/
-    box-sizing: border-box;
-   }
-
-  @media screen and (max-width: 480px){
-    .api, .container_api{
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  }
- 
-  .titulo_api{  
-    padding: 0 0 0.7rem 2rem;
-    color: rgba(174, 173, 173, 0.701);
-   }
-   
-  .campos_api{
-   color: #fff;
-   text-align: center;
-  }
-  #user-info_api{
-    list-style: none;
-    line-height: 1.2rem;
-  }
-
-  .form-control_api{
-    margin-left: 1.5rem;
-    max-width: 60%;
-    padding: 0.2rem 0.2rem;
-    outline: none;
-    border: solid 2px black;
-    box-sizing: border-box;
-    transition: .3s;
-  }
-  .form-control_api:focus{
-    border:rgb(239, 107, 7) 2px solid;
-   }
-
-  .juntos_api{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #botao_api{
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    border: none;
-    padding: 0.2rem 0.2rem;
-    margin: 0 1.5rem;
-  }
-  #botao_api:hover{
-    background-color: rgb(239, 107, 7);
-    border: none;
-  }
-
-/*==fim github profile==*/
-
-
+/* ========================================== */
 .linha-3{
     display: flex;
     flex-wrap: wrap;
@@ -177,8 +110,8 @@
     margin-top: 30px;
     margin-bottom: 120px;
     overflow: auto;
-    
 }
+
 .titulo-sobre{
     flex: 100%;
     padding: 20px 0 10px 60px;
@@ -186,6 +119,7 @@
     opacity: 1;
     font-size: 20px;
 }
+
 .dados-1, .dados-2{
     flex: 50%;
     line-height: 40px;
@@ -193,9 +127,7 @@
     font-size: 18px;
 }
 
-
 /*===fim sobre mim==*/
-
 .linha-4{
     display: flex;
     flex-wrap: wrap;
