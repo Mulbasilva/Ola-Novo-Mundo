@@ -1,20 +1,20 @@
-/*==================== GOOGLE FONTS ====================*/
+/*==================== GOOGLE FONTS ==========================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*=========== colors Variables ==================*/
+/*==================== COLORS VARIABLES ======================*/
 :root{
   --bgd-color: #d6d6d6;
-  --first-color: #000;
-  --second-color: #000;
-  --hover-clr: #00b5b9;
-  --clr-menu: #077577;
+  --hover-clr: #6a55d6;
+  --firs-color:#5A43CB;
   --foot-clr: #BB000E; 
 
-  /* ================ margens variable =========== */
-  --first-1-0: 0.625rem;
-  --second-2-0: 1.25rem; 
+  /* ================ MARGIN VARIABLES =========== */
+  --mrg-st-1-0: 0.625rem;
+  --mrg-mid-15: .9375rem;
+  --mrgn-nd-2-0: 1.25rem;
+  --page-mrgn: 0 auto; 
 
-  /* ================ font-size's =========== */
+  /* ================ FONT-SIZE'S =========== */
   --big-fs-3-2: 2rem;
   --fs-2-4: 1.5rem;
   --fs-2-0: 1.25rem;
@@ -22,12 +22,18 @@
   --normal-fs-1-6: 1rem;
   --fs-small-first-1-0: .625rem;
   --fs-small-second-0-5: .3125rem;
+
+/* =================== PAGE SIZE'S ================ */
+--page-size-1-2-00: 75rem;
+--sect-tit-font-2-0: 1.25rem;
+--sect-subt-font-1-7: 1.0625rem;
 }
 
-/*============= reset =====================*/
+/*============= R E S E T =====================*/
 *{
   box-sizing: border-box;
     margin: 0;
+    padding: 0;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
  }
@@ -36,10 +42,20 @@ body{
   background-color: var(--bgd-color);
 }
 
-.section__tittle,
-.section__subtitle{
-  
+.section{
+  margin-top: 4rem;
 }
+
+.section__subtitle{
+  color: #707070;
+  margin: var(--page-mrgn);
+}
+
+.section__tittle{
+  margin: var(--page-mrgn);
+  color: #707070;
+}
+
 
 
 
@@ -60,9 +76,11 @@ body{
 }
 
 
-/* ================== header =========================== */
+/* ================== H E A D E R =========================== */
 .nav__content{
-  margin: 1.25rem;
+  max-width: var(--page-size-1-2-00);
+  margin: var(--page-mrgn);
+  flex-wrap: wrap;
 } 
 
 .nav__list{
@@ -83,24 +101,66 @@ body{
 }
 
 .nav__name:hover{
-  color: var(--clr-menu);
+  color: var(--firs-color);
 }
 
-/* ==================== introducer ================= */
-.introducer__area{
-  margin: 1.25rem;
-}
-
+/* ==================== I N T R O D U C E R ================= */
 .introducer__container{
+  max-width: var(--page-size-1-2-00);
+  margin: var(--page-mrgn);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .introducer__description{
   font-size: 3rem;
 }
 
+.sub-description{
+  font-size: 1.5rem;
+}
+
+.photo{
+  width: auto;
+  height: 30rem;
+  border-radius: 36% 64% 24% 64% / 65% 33% 67% 35% ;
+}
+
+.introducer__image{
+  background: #e49d19;
+  border-radius: 36% 64% 26% 74% / 65% 33% 67% 35% ;
+}
+
+.introducer__social-midia{
+  font-size: 2rem;
+  margin: auto .5rem;
+  padding: .5rem;
+}
+
+.introducer__contact-botton{
+  width: 180px;
+  height: 50px;
+  background-color: var(--firs-color);
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--big-fs-3-2);
+}
+
+.botton__contact-me{
+  color: #fff;
+  font-size: var(--fs-2-0);
+}
+
+.introducer__contact-botton:hover{
+  background-color: var(--hover-clr);
+}
 /* ========================================== */
+
+
+
 .linha-3{
     display: flex;
     flex-wrap: wrap;
