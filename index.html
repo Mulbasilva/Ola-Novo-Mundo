@@ -19,19 +19,19 @@
         <nav class="nav__content">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a class="nav__name" href="#">Início</a>
+                    <a class="nav__name" href="index.html">Home</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__name" href="#">Sobre mim</a>
+                    <a class="nav__name" href="#aboutme">About me</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__name" href="#">Formação</a>
+                    <a class="nav__name" href="#education">Education</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__name" href="#">Experiência</a>
+                    <a class="nav__name" href="#">Experiences</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__name" href="#">Contato</a>
+                    <a class="nav__name" href="#">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -40,34 +40,34 @@
 <!-- ==================================== main =========================== -->
     <main>
 
-        <section class="section" id="introducer">
+        <section class="introducer__area" id="introducer">
             <div class="introducer__container">
 
                 <div class="introducer__social-midia">
                     <div class="github">
                         <a href="#" alt="github" target="_blank">
-                            <i class="uil uil-github" ></i>
+                            <i class="uil uil-github midia__link" ></i>
                         </a>
                     </div>
                     <div class="linkedin" >
                         <a href="" alt="linkedin" target="_blank">
-                            <i class="uil uil-linkedin"></i>
+                            <i class="uil uil-linkedin midia__link"></i>
                         </a>
                     </div>
                     <div class="instagram">
                         <a href="" alt="instagram" target="_blank">
-                            <i class="uil uil-instagram-alt"></i>
+                            <i class="uil uil-instagram-alt midia__link"></i>
                         </a>
                     </div>
                     <div class="facebook">
                         <a href="" alt="facebook" target="_blank">
-                            <i class="uil uil-facebook"></i>
+                            <i class="uil uil-facebook midia__link"></i>
                         </a>
                     </div>
                 </div> <!--end social midia-->
                 <div class="introducer">
                     <p class="introducer__description">
-                        Hi, i'm Mulba Silva</br> A Web developer.
+                        Hi, i'm Mulba Silva</br> A<span class="sub__line"> Web developer.</span>
                     </p>
                     <span class="sub-description">The path is long, but the will to shorten it is greater.</span>
                     <div class="introducer__contact-botton" id="contact">
@@ -76,7 +76,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="introducer__image my-profile">
+                <div class="introducer__image">
                     <img src="./imagem/perfil.png" alt="introducer image" class="photo">
                 </div>
             </div>
@@ -84,57 +84,106 @@
 
         <section style="color: red">Ainda sendo trabalhado...</section>
     <!--========================== About me =============================-->
-    <section id="sobre_mim" class="linha-3">
-        <div class="titulo-sobre">
-            <h3>Dados pessoais</h3>
-        </div>
-        <div class="dados-1">
-            <ul>
-                <li><strong>Data de nascimento:</strong> 24 junho 1993;</li>
-                <li><strong>Telefone:</strong> +55 85 997235817;</li>
-                <li><strong>Cidade:</strong> Redenção, CE;</li>
-                <li><strong>Linguas:</strong> Português, Inglês, Francês e Alemão.</li>
-            </ul>
-        </div>
-        <div class="dados-2">
-            <ul>
-                <li><strong>Idade:</strong> 29 anos;</li>
-                <li><strong>Grau:</strong> Iniciante;</li>
-                <li><strong>E-mail:</strong> dideus24@gmail.com;</li>
-                <li><strong>Freelance:</strong> Disponível</li>
-            </ul>
-        </div>
-    </section> 
+        <section class="section" id="aboutme">
+            <h2 class="section__title">About Me</h2>
+            <h3 class="section__subtitle">My introduction</h3>
+            <div class="about__container display__grid">
+                <div class="about__my-profile">
+                    <img class="about__photo" src="./imagem/mul-perfil.jpg" alt="photo about me">
+                </div>
+                <div class="about__data__container display__inline-block">
+                        <h3 class="about__data-title">UI/UX Designer & Web Developer</h3>
+                    <p class="about__data-description">Defino me em três palavras: calmo, alegre e esforçoso.</p>
+                    <div class="about__data-display__flex">
+                        <ul class="about__data-list-item">
+                            <li class="about__data-item"><i class="uil uil-angle-right icone__list"></i><b>Data de nascimento:</b> 24 junho 1993</li>
+                            <li class="about__data-item"><i class="uil uil-angle-right icone__list"></i><b>Telefone:</b> (+55) 85 997235817</li>
+                            <li class="about__data-item"><i class="uil uil-angle-right icone__list"></i><b>Cidade:</b> Redenção, CE</li>
+                            <li class="about__data-item"><i class="uil uil-angle-right icone__list"></i> <b>Languages:</b> Português, Inglês, Francês e Alemão</li>
+                        </ul>
+                        <ul class="about__data-list-item">
+                            <li class="about__data-item"><i class="uil uil-angle-right icone__list"></i><b>Age:</b> 29 years old;</li>
+                            <li class="about__data-item"><i class="uil uil-angle-right icone__list"></i><b>degree:</b> Beginner;</li>
+                            <li class="about__data-item"><i class="uil uil-angle-right icone__list"></i><b>E-mail:</b> dideus24@gmail.com;</li>
+                            <li class="about__data-item"><i class="uil uil-angle-right icone__list"></i><b>Freelance:</b> Available</li>
+                        </ul>
+                    </div>
+                    <p class="about__data-description">ainda redigir aqui....ainda redigir aqui....ainda redigir aqui....ainda redigir aqui....ainda redigir aqui....ainda redigir aqui....ainda redigir aqui....ainda redigir aqui....ainda redigir aqui....ainda redigir aqui....</p>
+                    <div class="about__btn">
+                        <a download="" class="about__btn_-link" href="./imagem/mul-perfil.jpg">
+                        Download CV<i class="uil uil-download-alt about__btn-icone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section> 
 
-    <!--===================== Formation =====================-->
-    <section id="formacao" class="linha-4">
-        <div class="titulo-formacao">
-            <h2>Formação</h2>
-        </div>
-        <div class="detalhes-formacao">
-            <h3>2022</h3>
+    <!--===================== education =====================-->
+        <section class="section" id="education">
+            <h2 class="section__title">Education</h2>
+            <h3 class="section__subtitle"><i class="uil uil-book-open education__icone"></i></h3>
+
+            <div class="education__container">
+
+                <div class="education__frontend">
+                    <h1> System Developer Technician</h1>
+                    <small><i class="uil uil-calendar-alt"></i>At the moment (2023)</small>
+                </div>
+                <div class="education__frontend">
+                    <h1> Frondend Developer</h1>
+                    <small><i class="uil uil-calendar-alt"></i>2022</small>
+                </div>
+                <div class="education__physics">
+                    <h1>Degree in Physics</h1>
+                    <small><i class="uil uil-calendar-alt"></i>2022</small>
+                </div>
+                <div class="education__technician">
+                    <h1>Computer Maintenance and Repair Technician</h1>
+                    <small><i class="uil uil-calendar-alt"></i>2014</small>
+                </div>
+            </div>
+
+                <div class="formacao-list">
+                    <ul>
+                        <li><em>Cascading Style Sheets (CSS)</em></li>
+                        <li><em>Linguagem de Marcação de HiperTexto (HTML)</em></li>
+                        <li><em>JavaSccript</em></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="detalhes-formacao">
+                <h3>2022</h3>
+                <h3>Licenciatura em física</h3>
+                <li>Termnado a liceciatura em física...</li>
+            </div>
+            <div class="detalhes-formacao">
+                <h3>2022</h3>
+                <h3>Técnico em manutenção</h3>
+                <li>Técnico em manutencção e reparação de computadores.</li>
+            </div>
+        </section>
+
+    <!-- ===================== SKILLS =============== -->
+    <div class="education__container">
+
+        <div class="education__content">
             <h3>Desenvolvedor Frond-end</h3>
-            <p>Curso de desenvolvedor frond-end, com seguintes conhecimetos:</p> 
-            <div class="formacao-list">
-                <ul>
-                    <li><em>Cascading Style Sheets (CSS)</em></li>
-                    <li><em>Linguagem de Marcação de HiperTexto (HTML)</em></li>
-                    <li><em>JavaSccript</em></li>
-                </ul>
+            <small>2022</small>
+            <div class="skill__css">
+                <div>
+                    <h3>HTML</h3>
+                    <span>90%</span>
+                </div>
+                <div>
+                    <span></span>
+                </div>
             </div>
         </div>
-        <div class="detalhes-formacao">
-            <h3>2022</h3>
-            <h3>Licenciatura em física</h3>
-            <li>Termnado a liceciatura em física...</li>
-        </div>
-        <div class="detalhes-formacao">
-            <h3>2022</h3>
-            <h3>Técnico em manutenção</h3>
-            <li>Técnico em manutencção e reparação de computadores.</li>
-        </div>
-    </section>
 
+
+
+
+    
     <!--================= Experience ==============-->
     <section id="experiencia" class="linha-5">
         <div class="titulo-experiencia">
