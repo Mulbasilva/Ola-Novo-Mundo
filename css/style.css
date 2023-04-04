@@ -7,6 +7,7 @@
   --hover-clr: #6a55d6;
   --firs-color:#5A43CB;
   --sencond-clr: #BB000E; 
+  --rd-clr: #0c8d2c;
 
   /* ================ MARGIN VARIABLES =========== */
   --mrg-st-1-0: 0.625rem;
@@ -69,7 +70,6 @@ body{
 .nav__content{
   max-width: var(--page-size-1-2-00);
   margin: var(--page-mrgn);
-  flex-wrap: wrap;
 } 
 
 .nav__list{
@@ -83,6 +83,7 @@ body{
   margin-left: 3rem;
   font-size: 1.2rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
  }
 
 .nav__name{
@@ -104,6 +105,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .introducer__description{
@@ -186,7 +188,7 @@ body{
   background-color: var(--hover-clr);
 }
 
-/* ==================A B O U T - ME ======================= */
+/* ================== A B O U T - ME ======================= */
 .about__container{
   max-width: var(--page-size-1-2-00);
   margin: var(--page-mrgn);
@@ -263,10 +265,125 @@ body{
   font-size: 1.3rem;
 }
 
+/* =========== E D U C A T I O N ================ */
+.education__container{
+  max-width: var(--page-size-1-2-00);
+  margin: var(--page-mrgn);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
- 
+.education__item{
+  margin-top: 1.875rem;
+}
+
+.skills{
+  margin-top: 4rem;
+  /* background-color: red; */
+
+}
 
 
+.skills__title{
+  text-align: center;
+  color: #707070;
+  
+}
+
+.skills__subtitle{
+  text-align: center;
+  color: #707070;
+}
+
+.skills__container{
+  max-width: var(--page-size-1-2-00);
+  margin: var(--page-mrgn);
+}
+
+.skills__content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1.875rem;
+}
+
+.skill__container{
+  display: block;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 31.25rem;
+}
+
+.skill__title{
+  font-size: medium;
+}
+
+.skill__head{
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 20px; */
+}
+
+.skill__percentage-content, 
+.skill__percentage{
+  height: 5px;
+  border-radius: .25px;
+}
+
+.skill__percentage-content{
+  background-color: var(--sencond-clr);
+}
+
+.skill__percentage{
+  display: flex;
+  background-color: var(--rd-clr);
+}
+
+.skill__html{
+  width: 49%;
+}
+
+.skill__css{
+  width: 49%;
+}
+
+.skill__js{
+  width: 20%;
+}
+
+.skill__react{
+  width: 48%;
+}
+
+.skill__bootstrap{
+  width: 40%;
+}
+
+.skill__github{
+  width: 40%;
+}
+
+.skill__figma{
+  width: 46%;
+}
+
+.skill__photoshop{
+  width: 48%;
+}
+
+.skill__office{
+  width: 72%;
+}
+
+.skill__vegas{
+  width: 49%;
+}
+
+.skill__wordpress{
+  width: 68%;
+}
 /* ========================================================= */
 
 
