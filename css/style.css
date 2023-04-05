@@ -281,8 +281,6 @@ body{
 
 .skills{
   margin-top: 4rem;
-  /* background-color: red; */
-
 }
 
 
@@ -305,7 +303,7 @@ body{
 
 .skills__content{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-top: 1.875rem;
 }
@@ -317,6 +315,10 @@ body{
   width: 31.25rem;
 }
 
+.skill__list{
+  margin-left: 1.25rem;
+}
+
 .skill__title{
   font-size: medium;
 }
@@ -324,7 +326,6 @@ body{
 .skill__head{
   display: flex;
   justify-content: space-between;
-  /* margin-bottom: 20px; */
 }
 
 .skill__percentage-content, 
@@ -407,6 +408,7 @@ body{
 .experience__list-2{
   list-style: none;
   line-height: 3;
+  margin-left: 1.25rem;
 }
 
 .experience__item::before{
@@ -424,7 +426,7 @@ body{
 
 /*==fim experiencia==*/
 
-.linha-7{
+.contact{
     display: flex;
     flex-wrap: wrap;
     background-color:#070707;
