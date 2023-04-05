@@ -300,6 +300,7 @@ body{
 .skills__container{
   max-width: var(--page-size-1-2-00);
   margin: var(--page-mrgn);
+
 }
 
 .skills__content{
@@ -383,6 +384,39 @@ body{
 
 .skill__wordpress{
   width: 68%;
+}
+
+.skill__api{
+  width: 35%;
+}
+
+/* ===============E X P E R I E N C E ==================== */
+.experience__container{
+  max-width: var(--page-size-1-2-00);
+  margin: var(--page-mrgn);
+  flex-wrap: wrap;
+}
+
+.experience__content{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.experience__list-1, 
+.experience__list-2{
+  list-style: none;
+  line-height: 3;
+}
+
+.experience__item::before{
+  content: '';
+  width: .625rem;
+  height: .625rem;
+  display: inline-block;
+  background-color: var(--firs-color);
+  border-radius: 50%;
+  margin-right: 5px;
 }
 /* ========================================================= */
 
