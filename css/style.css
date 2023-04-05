@@ -199,7 +199,7 @@ body{
 }
 
 .about__container:hover{
-  background-color: red;
+  /* background-color: red; */
 }
 
 .about__my-profile{
