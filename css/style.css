@@ -113,6 +113,7 @@ body{
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .introducer__description{
@@ -162,6 +163,7 @@ body{
 
 .introducer__image:hover{
   border-radius: 50% 50% 66% 34% / 47% 43% 57% 53% ;
+
 }
 
 .introducer__social-midia{
@@ -187,6 +189,34 @@ body{
   justify-content: center;
   align-items: center;
   margin-top: var(--big-fs-3-2);
+}
+
+.sms{ 
+  width: 8.75rem;
+}
+
+.sms-6{
+  position: absolute;
+  top: 2rem;
+  right: 19rem;
+  z-index: -1;
+}
+
+.sms-s{
+  transition: .5s ease-in;
+}
+
+.sms-5{
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.sms-1{
+  bottom: 1.5rem;
+  position: absolute;
+  right: 0;
+  z-index: -1;
 }
 
 .botton__contact-me{
@@ -257,8 +287,9 @@ body{
   max-width: var(--page-size-1-2-00);
   margin: var(--page-mrgn);
   display: grid;
-  flex-wrap: wrap;
   grid-template-columns: 1fr 3fr;
+  column-gap: .625rem;
+  flex-wrap: wrap;
 }
 
 .about__my-profile{
@@ -276,11 +307,6 @@ body{
 .about__data__container{
   display: inline-block;
   flex-wrap: wrap;
-}
-
-.about__data-title, 
-.about__data-description{
-  margin-left: .625rem;
 }
 
 .about__data-display__flex{
@@ -302,14 +328,14 @@ body{
 }
 
 .about__btn{
-  width: 180px;
+  width: 190px;
   height: var(--h-5-0);
   background-color: var(--firs-color);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1.5rem auto 5px 5rem;
+  margin: 2rem auto auto 5rem;
   border-radius: .5rem;
 }
 
@@ -323,7 +349,6 @@ body{
   margin-left:10px;
   font-size: 1.3rem;
 }
-
 /* ---------------- M O B I L E ---------------- */
 @media screen and (max-width: 29.9375rem){
   
@@ -334,9 +359,9 @@ body{
   max-width: var(--page-size-1-2-00);
   margin: var(--page-mrgn);
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: inherit;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 .education__item{
