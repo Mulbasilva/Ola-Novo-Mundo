@@ -95,7 +95,7 @@ body{
 }
 
 /* --------------------- MOBILE AND TABLET ---------------- */
-@media screen and (max-width: 29.9375rem) {
+@media screen and (max-width: 47.9375rem) {
     .header{
       background-color: var(--firs-color);
     }
@@ -113,6 +113,10 @@ body{
 .introducer__container{
   max-width: var(--page-size-1-2-00);
   margin: var(--page-mrgn);
+  
+}
+
+.introducer__content{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,7 +149,7 @@ body{
   background-color: #BB000E;
 }
 
-.sub-description{
+.small-description{
   font-size: 1.5rem;
   padding: .625rem;
 }
@@ -232,10 +236,10 @@ body{
 }
 
 /* --------------------- MOBILE AND TABLET ---------------- */
-@media screen and (max-width: 29.9375rem) {
-  .introducer__container{
+@media screen and (max-width: 47.9375rem) {
+  .introducer__content{
     flex-direction: column-reverse;
-    position: relative;
+    margin: auto .625rem;
   }
 
   .sms{
@@ -243,18 +247,15 @@ body{
   }
 
   .introducer__description{
-    font-size: 2rem;
     text-align: center;
   }
 
   .sub__line::after{
-    width: 15.1rem;
-    height: 2px;
-    margin-left: 6.1rem;
+    display: none;
   }
 
-  .sub-description{
-    font-size: 1rem;
+
+  .small-description{
     padding: .625rem;
   }
 
@@ -278,6 +279,33 @@ body{
 
   .midia__link{
     margin-left: .9375rem;
+  }
+}
+
+@media screen and (min-width: 48rem) and  (max-width: 66.3125rem){
+  .introducer__content{
+    flex-direction: column-reverse;
+    margin: auto .625rem;
+  }
+
+  .sms{
+    display: none;
+  }
+
+  .introducer__description{
+    text-align: center;
+  }
+
+  .sub__line::after{
+    display: none;
+  }
+
+  .introducer__social-midia{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    bottom: -1.25rem;
+    margin-right: 160px;
   }
 }
 
@@ -348,10 +376,19 @@ body{
   font-size: 1.3rem;
 }
 /* ---------------- M O B I L E AND TABLET ---------------- */
-@media screen and (max-width: 29.9375rem){
+@media screen and (max-width: 47.9375rem){
   .about__container{
     display: block;
     margin: auto 1.25rem;
+  }
+
+  .about__data-title{
+    text-align: center;
+    margin-top: .625rem;
+  }
+
+  .about__data-description{
+    text-align: justify;
   }
 
   .about__btn{
@@ -378,7 +415,7 @@ body{
 .education__item{
   margin-top: 1.875rem;
 }
-
+/* ----------------------- S K I L L S ------------------ */
 .skills{
   margin-top: 4rem;
 }
@@ -494,16 +531,33 @@ body{
 }
 
 /* ---------------- M O B I L E AND TABLET ---------------- */
-@media screen and (max-width: 29.9375rem){
+@media screen and (max-width: 550px){
   .education__container{
-    margin: auto 1.25rem;
+    margin: auto 1.25rem; 
+  }
+
+  .skills__content{
+    justify-content: center;
   }
 
   .skill__container{
-    width: 27rem;
+    width: 24rem;
   }
-  
+}
 
+
+@media screen and (min-width: 551px){
+  .education__container{
+    margin: auto 1.25rem; 
+  }
+
+  .skills__content{
+    justify-content: center;
+  }
+
+  .skill__container{
+    width: 30rem;
+  }
 }
 
 /* ===============E X P E R I E N C E ==================== */
@@ -516,6 +570,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: start;
+  text-align: justify;
 }
 
 .experience__list-1, 
@@ -536,13 +591,14 @@ body{
 }
 
 /* ---------------- M O B I L E AND TABLET---------------- */
-@media screen and (max-width: 29.9375rem){
+@media screen and (max-width: 47.9375rem){
   .experience__container{
     margin: auto 1.25rem;
   }
 
   .experience__content{
     flex-wrap: wrap;
+    text-align: justify;
   }
 }
 
@@ -634,8 +690,19 @@ body{
   }
   
   /* ---------------- M O B I L E AND TABLET---------------- */
-@media screen and (max-width: 29.9375rem){
-  
+@media screen and (max-width: 47.9375rem){
+  .contact{
+    margin-right: .625rem;
+  }
+
+  .contact__description{
+    text-align: justify;
+  }
+
+  .contact__container{
+    justify-content: center;
+    align-items: center;
+  }
 
 }
 /*========================== RODAPÉ =======================*/
