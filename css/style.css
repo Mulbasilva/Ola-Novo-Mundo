@@ -353,20 +353,22 @@ body{
   color: var(--firs-color);
 }
 
-.about__btn{
+
+.about__btn-link{
   width: 190px;
   height: var(--h-5-0);
   background-color: var(--firs-color);
   color: #fff;
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 2rem auto auto 5rem;
   border-radius: .5rem;
+  border: 1px solid black;
 }
 
-.about__btn-icone,
-.about__btn_-link{
+.about__btn-icone{
   color: #fff;
   font-size: 20px;
 }
@@ -391,6 +393,10 @@ body{
     text-align: justify;
   }
 
+  .about__photo{
+    width: 90%;
+  }
+
   .about__btn{
     width: 190px;
     height: 40px;
@@ -402,6 +408,26 @@ body{
   }
 }
 
+@media screen and (min-width: 48rem) and (max-width: 73.75rem){
+  .about__container{
+    display: block;
+    margin: auto 1.25rem;
+  }
+
+  .about__data-title{
+    text-align: center;
+    margin-top: .625rem;
+  }
+
+  .about__data-display__flex{
+    justify-content: center;
+  }
+
+  .about__photo{
+    width: 60%;
+  }
+
+}
 /* =========== E D U C A T I O N ================ */
 .education__container{
   max-width: var(--page-size-1-2-00);
