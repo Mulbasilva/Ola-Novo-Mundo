@@ -69,6 +69,7 @@ body{
 .nav__content{
   max-width: var(--page-size-1-2-00);
   margin: var(--page-mrgn);
+  background-color: red;
 } 
 
 .nav__list{
@@ -91,7 +92,10 @@ body{
 }
 
 .nav__name:hover{
-  color: var(--firs-color);
+  background-color: var(--firs-color);
+  /* color: var(--firs-color); */
+  color: #fff;
+  border-radius: 10px;
 }
 
 /* --------------------- MOBILE AND TABLET ---------------- */
@@ -113,7 +117,7 @@ body{
 .introducer__container{
   max-width: var(--page-size-1-2-00);
   margin: var(--page-mrgn);
-  
+  background-color: red;
 }
 
 .introducer__content{
@@ -121,7 +125,11 @@ body{
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  position: relative;
+  /* position: relative; */
+}
+
+.introducer__social-midia{
+  text-align: end;
 }
 
 .introducer__description{
@@ -171,7 +179,6 @@ body{
 
 .introducer__image:hover{
   border-radius: 50% 50% 66% 34% / 47% 43% 57% 53% ;
-
 }
 
 .introducer__social-midia{
@@ -198,32 +205,8 @@ body{
   margin-top: var(--big-fs-3-2);
 }
 
-.sms{ 
-  width: 8.75rem;
-}
-
-.sms-6{
-  position: absolute;
-  top: 2rem;
-  right: 19rem;
-  z-index: -1;
-}
-
 .sms-s{
   transition: .5s ease-in;
-}
-
-.sms-5{
-  position: absolute;
-  right: 0;
-  z-index: -1;
-}
-
-.sms-1{
-  bottom: 1.5rem;
-  position: absolute;
-  right: 0;
-  z-index: -1;
 }
 
 .botton__contact-me{
@@ -288,10 +271,6 @@ body{
     margin: auto .625rem;
   }
 
-  .sms{
-    display: none;
-  }
-
   .introducer__description{
     text-align: center;
   }
@@ -314,6 +293,7 @@ body{
 .about__container{
   max-width: var(--page-size-1-2-00);
   margin: var(--page-mrgn);
+  background-color: red;
   display: grid;
   grid-template-columns: 1fr 3fr;
   column-gap: .625rem;
@@ -324,6 +304,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(75, 73, 73);
 }
 
 .about__photo{
@@ -344,8 +325,19 @@ body{
   line-height: 1.8;
 }
 
+.about__data-title{
+  font-size: 24px;
+}
+
 .about__data-list-item{
   list-style: none;
+  margin: 20px;
+}
+
+.about__data-description, 
+.about__data-description{
+  text-align: justify;
+  text-indent: 20px;
 }
 
 .icone__list{
@@ -359,18 +351,17 @@ body{
   height: var(--h-5-0);
   background-color: var(--firs-color);
   color: #fff;
-  font-size: 20px;
+  font-size: var(--fs-2-0);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 2rem auto auto 5rem;
   border-radius: .5rem;
-  border: 1px solid black;
 }
 
 .about__btn-icone{
   color: #fff;
-  font-size: 20px;
+  font-size: var(--fs-2-0);
 }
  
 .about__btn-icone{
@@ -432,20 +423,38 @@ body{
 .education__container{
   max-width: var(--page-size-1-2-00);
   margin: var(--page-mrgn);
+  background-color: red;
+}
+
+.education__cards{
+  padding: 20px;
   display: flex;
-  flex-wrap: wrap;
+  text-align: center;
   justify-content: space-between;
-  align-items: start;
+  flex-wrap: wrap;
 }
 
-.education__item{
-  margin-top: 1.875rem;
-}
-/* ----------------------- S K I L L S ------------------ */
-.skills{
-  margin-top: 4rem;
+.card{
+  width: 250px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.title__card-5{
+  font-size: 20px;
+}
+
+.title__card{
+  font-size: 2rem;
+}
+
+
+/* ==================== S K I L L S ================= */
 .skills__title{
   text-align: center;
   color: #707070;
@@ -460,6 +469,7 @@ body{
 .skills__container{
   max-width: var(--page-size-1-2-00);
   margin: var(--page-mrgn);
+  background-color: red;
 
 }
 
@@ -558,9 +568,9 @@ body{
 
 /* ---------------- M O B I L E AND TABLET ---------------- */
 @media screen and (max-width: 550px){
-  .education__container{
+  /* .education__container{
     margin: auto 1.25rem; 
-  }
+  } */
 
   .skills__content{
     justify-content: center;
@@ -573,9 +583,9 @@ body{
 
 
 @media screen and (min-width: 551px){
-  .education__container{
+  /* .education__container{
     margin: auto 1.25rem; 
-  }
+  } */
 
   .skills__content{
     justify-content: center;
