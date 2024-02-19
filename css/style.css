@@ -69,7 +69,6 @@ body{
 .nav__content{
   max-width: var(--page-size-1-2-00);
   margin: var(--page-mrgn);
-  background-color: red;
 } 
 
 .nav__list{
@@ -93,7 +92,6 @@ body{
 
 .nav__name:hover{
   background-color: var(--firs-color);
-  /* color: var(--firs-color); */
   color: #fff;
   border-radius: 10px;
 }
@@ -106,7 +104,6 @@ body{
     .nav__list{
       display: block;
     }
-
     .nav__item{
       margin-top: 1rem;
      }
@@ -117,7 +114,6 @@ body{
 .introducer__container{
   max-width: var(--page-size-1-2-00);
   margin: var(--page-mrgn);
-  background-color: red;
 }
 
 .introducer__content{
@@ -125,7 +121,6 @@ body{
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  /* position: relative; */
 }
 
 .introducer__social-midia{
@@ -133,7 +128,7 @@ body{
 }
 
 .introducer__description{
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 1.125rem;
   padding: .625rem;
 }
@@ -150,9 +145,9 @@ body{
 .sub__line::after{
   content: '';
   display: flex;
-  width: 23.125rem;
+  width: 30rem;
   height: 2px;
-  margin-left: 3rem;
+  margin-left: 6rem;
   margin-top: -8px;
   background-color: #BB000E;
 }
@@ -218,7 +213,7 @@ body{
   background-color: var(--hover-clr);
 }
 
-/* --------------------- MOBILE AND TABLET ---------------- */
+/* --------------------- MOBILE AND TABLET INTRODUCER ---------------- */
 @media screen and (max-width: 47.9375rem) {
   .introducer__content{
     flex-direction: column-reverse;
@@ -231,6 +226,7 @@ body{
 
   .introducer__description{
     text-align: center;
+    font-size: 2rem;
   }
 
   .sub__line::after{
@@ -254,37 +250,11 @@ body{
   }
 
   .introducer__social-midia{
-    display: flex;
-    position: absolute;
-    right: 20px;
-    bottom: -1.25rem;
+    display: none;
   }
 
   .midia__link{
     margin-left: .9375rem;
-  }
-}
-
-@media screen and (min-width: 48rem) and  (max-width: 66.3125rem){
-  .introducer__content{
-    flex-direction: column-reverse;
-    margin: auto .625rem;
-  }
-
-  .introducer__description{
-    text-align: center;
-  }
-
-  .sub__line::after{
-    display: none;
-  }
-
-  .introducer__social-midia{
-    display: flex;
-    position: absolute;
-    right: 20px;
-    bottom: -1.25rem;
-    margin-right: 160px;
   }
 }
 
@@ -293,7 +263,6 @@ body{
 .about__container{
   max-width: var(--page-size-1-2-00);
   margin: var(--page-mrgn);
-  background-color: red;
   display: grid;
   grid-template-columns: 1fr 3fr;
   column-gap: .625rem;
@@ -316,33 +285,8 @@ body{
 .about__data__container{
   display: inline-block;
   flex-wrap: wrap;
-}
-
-.about__data-display__flex{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1.25rem auto ;
-  line-height: 1.8;
-}
-
-.about__data-title{
-  font-size: 24px;
-}
-
-.about__data-list-item{
-  list-style: none;
-  margin: 20px;
-}
-
-.about__data-description, 
-.about__data-description{
+  font-size: 1.3rem;
   text-align: justify;
-  text-indent: 20px;
-}
-
-.icone__list{
-  font-size: 1.5rem;
-  color: var(--firs-color);
 }
 
 
@@ -368,6 +312,7 @@ body{
   margin-left:10px;
   font-size: 1.3rem;
 }
+
 /* ---------------- M O B I L E AND TABLET ---------------- */
 @media screen and (max-width: 47.9375rem){
   .about__container{
@@ -399,31 +344,10 @@ body{
   }
 }
 
-@media screen and (min-width: 48rem) and (max-width: 73.75rem){
-  .about__container{
-    display: block;
-    margin: auto 1.25rem;
-  }
-
-  .about__data-title{
-    text-align: center;
-    margin-top: .625rem;
-  }
-
-  .about__data-display__flex{
-    justify-content: center;
-  }
-
-  .about__photo{
-    width: 60%;
-  }
-
-}
 /* =========== E D U C A T I O N ================ */
 .education__container{
   max-width: var(--page-size-1-2-00);
   margin: var(--page-mrgn);
-  background-color: red;
 }
 
 .education__cards{
@@ -568,9 +492,9 @@ body{
 
 /* ---------------- M O B I L E AND TABLET ---------------- */
 @media screen and (max-width: 550px){
-  /* .education__container{
-    margin: auto 1.25rem; 
-  } */
+  .education__cards{
+    justify-content: center; 
+  }
 
   .skills__content{
     justify-content: center;
@@ -581,20 +505,6 @@ body{
   }
 }
 
-
-@media screen and (min-width: 551px){
-  /* .education__container{
-    margin: auto 1.25rem; 
-  } */
-
-  .skills__content{
-    justify-content: center;
-  }
-
-  .skill__container{
-    width: 30rem;
-  }
-}
 
 /* ===============E X P E R I E N C E ==================== */
 .experience__container{
