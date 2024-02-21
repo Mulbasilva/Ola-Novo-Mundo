@@ -64,6 +64,10 @@ body{
   margin-bottom: 3rem;
 }
 
+/* ----------------- ESTILOS GERAIS -------------------------- */
+html{
+  scroll-behavior: smooth;
+}
 
 /* ================== H E A D E R =========================== */
 .nav__content{
@@ -402,6 +406,14 @@ body{
   font-size: 2rem;
 }
 
+/* ---------------- M O B I L E AND TABLET SKILLS ---------------- */
+/*----- Faça leitura como uma árvore crescendo, de < para > -------*/
+@media screen and (max-width: 47.5rem){ 
+  .education__cards{
+    justify-content: center; 
+  }
+}
+
 
 /* ==================== S K I L L S ================= */
 .skills__title{
@@ -426,11 +438,16 @@ body{
   align-items: center;
   margin-top: 1.875rem;
   flex-wrap: wrap;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .skill__list{
-  margin-left: 1.25rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .skill__container{
@@ -438,6 +455,7 @@ body{
   align-items: center;
   margin-bottom: 30px;
   width: 31.25rem;
+  margin-right: 2rem;
 }
 
 
@@ -498,11 +516,9 @@ body{
   width: 35%;
 }
 
-/* ---------------- M O B I L E AND TABLET ---------------- */
-@media screen and (max-width: 47.5rem){
-  .education__cards{
-    justify-content: center; 
-  }
+/* ---------------- M O B I L E AND TABLET SKILLS ---------------- */
+/*----- Faça leitura como uma árvore crescendo, de < para > -------*/
+@media screen and (max-width: 47.5rem){ 
 
   .skills__content{
     justify-content: center;
@@ -556,7 +572,7 @@ body{
   }
 }
 
-/*==================== P R O J E T O S ======================*/
+/*==================== P R O F I L E G I T H U B ======================*/
 
 .profile__github__container{
   display: flex;
@@ -564,7 +580,7 @@ body{
   margin-right: 2rem;
 }
 
-.perfil__general{
+.profile__general{
   width: 500px;
   height: 300px;
   display: flex;
@@ -595,23 +611,58 @@ body{
   color: #fff;
 }
 
+  /* ---------------- M O B I L E AND TABLET GITHUB PROFILE---------------- */
+  @media screen and (max-width: 47.5rem){
+    .profile__github__container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profile__github__title{
+      text-align: center;
+      margin-right: 2rem;
+    }
+
+    .img__github__api{
+      width: 90px;
+      border-radius: 50%;
+    }
+
+    .profile__general{
+      width: 400px;
+      height: 200px;
+    }
+
+    .github__btn{
+      width: 400px;
+      font-size: 14px;
+    }
+  
+  }
+
+/*==================== P R O J E T O S ======================*/
 
 
-/*==================== CONTACT ======================*/
-.roll_subir{
+
+/*====================  S C R O L L UP ======================*/
+
+.roll_scrollup{
   text-align: end;
   cursor: pointer;
 }
 
-.subir{
+.scrollup{
   color: var(--firs-color);
   font-size: 3rem;
 }
 
-.roll_subir:hover{
+.roll_scrollup:hover{
   transform: translateY(-10px);
   transition: .6s;
 }
+
+/*==================== C O N T A C T ======================*/
 
 .footer__section{
   background-color: #000;
